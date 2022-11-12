@@ -1,0 +1,16 @@
+#Type Conversion:-
+#Type Casting(convert the value from one type to another value)
+   --Types
+      1.Implicit
+      2.Explicit
+--Data Types(convert one type to amnother type)  
+    1.String(single quotes,double quotes)
+    2.Boolean(true/false)
+    3.Date
+    4.Float
+    5.Number
+    6.null
+    7.object(iterble,Non iterable)
+       iterable:Array
+       Non iterable:key value pair 
+    8.null
