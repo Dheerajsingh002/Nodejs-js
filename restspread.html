@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Rest Operators
+        function add(a,b,c,...others)
+{
+    console.log(others);
+    return a+b+c;
+}
+console.log(add(1,2,3,4,5,6,7));
+var arr=[1,2,3,45,5,6,7];
+function getName(name1,name2,name3,name4,name5,name6,name7){
+    console.log(name1,name2,name3,name4,name5,name6,name7);
+}
+getName(...arr);
+var st1={
+    name:"Dheeraj",
+    rollno:32,
+    age:21
+}
+var st1={
+    ...st1,
+    age:30
+}
+console.log(st1);
+
+    </script>
+    
+</body>
+</html>

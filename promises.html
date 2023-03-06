@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const dh=[{name:"dheeraj",profression:"SE"},{name:"vijay",profression:"SE"}];
+        function get(){
+            setTimeout(()=>{
+                let output="";
+                dh.forEach((data,index)=>{
+                    output+=`<li>${data.name}</li>`;
+                });
+                document.body.innerHTML=output;
+            },1000);
+        }
+        function getdata(newdata,callback){
+            setTimeout(()=>{
+               dh.push(newdata);
+               callback();
+            },2000);
+        }
+        get();
+        getdata({name:"rahul",profression:"SE"},get);
+       
+    </script>
+    
+</body>
+</html>
