@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const a={
+            name:"Dheeraj",
+            profession:"SE"
+        }
+       
+        
+        const b={
+            roll:1,
+             __proto__:a
+        }
+        const c={
+            class:"MCA",
+            city:"hathras",
+             __proto__:b
+        }
+        console.log(b.roll);
+        console.log(b.name,b.profession)
+        //call
+        const d={
+            First:"Dheeraj",
+            Last:"singh",
+            GetName:function(){
+                Console.log(this.First);
+            }
+        }
+        d.GetName();
+        const e={
+            Age:21
+        }
+        d.GetName().call(e);
+    </script>
+    
+</body>
+</html>

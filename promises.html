@@ -18,14 +18,15 @@
                 document.body.innerHTML=output;
             },1000);
         }
-        function getdata(newdata,callback){
+        function getdata(newdata){
             setTimeout(()=>{
                dh.push(newdata);
-               callback();
+
             },2000);
         }
+       
+        getdata({name:"rahul",profression:"SE"});
         get();
-        getdata({name:"rahul",profression:"SE"},get);
        
     </script>
     
