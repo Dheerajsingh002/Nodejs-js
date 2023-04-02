@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://res.cloudinary.com/codier/image/upload/v1597993146/pfm6massbguu3zkomgkh.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #218c74;
+    padding: 15px 10%;
+
+}
+
+.logo a {
+    font-family: 'Pacifico', cursive;
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+}
+
+.signin-button {
+    color: white;
+    font-weight: bold;
+    font-size: 23px;
+    border-radius: 7px;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-family: sans-serif;
+    background-color: #ff7b00;
+}
+
+.container {
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: auto;
+}
+
+.main-text {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.container-child {
+    color: white;
+    font-family: 'Baloo Tamma 2', cursive;
+    width: 45%;
+    height: 500px;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+.container-child label {
+    text-align: left;
+    float: left;
+    font-size: 23px;
+}
+
+input {
+    width: 100%;
+    padding: 8px 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    font-size: 1.35vw;
+    font-family: 'Baloo Tamma 2', cursive;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    background-color: #e84118;
+}
+
+p {
+    text-align: center;
+}
+
+.data-collect {
+    width: 20%;
+    max-width: 200px;
+    padding: 0px 10px;
+    margin-top: 30px;
+    font-family: 'Baloo Tamma 2', cursive;
+    background-color: #ff7b00;
+}
+
+@media screen and (max-width: 1200px){
+    .container {
+        flex-direction: column;
+    }
+    .container-child {
+        width: 75%;
+        margin: 10px 0px;
+    }
+    button {
+        font-size: 2vw;
+    }
+}
+
+footer {
+    font-family: sans-serif;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
