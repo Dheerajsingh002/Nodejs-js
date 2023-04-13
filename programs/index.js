@@ -10,6 +10,6 @@
 // console.log(b);
 // console.log(typeof b);
 var str="hello world";
-var"hello";
+
 var a=str.includes(sub);
 console.log(a);
